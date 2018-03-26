@@ -2,13 +2,13 @@
   "name": "ahalogy_interview_server",
   "version": "1.0.0",
   "description": "Server for ahalogy interview",
-  "main": "index.js",
   "dependencies": {
     "express": "^4.16.3"
   },
   "devDependencies": {},
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC"
