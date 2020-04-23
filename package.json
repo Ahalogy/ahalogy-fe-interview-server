@@ -1,14 +1,14 @@
 {
   "name": "ahalogy_interview_server",
   "version": "1.0.0",
-  "description": "Server for ahalogy interview",
+  "description": "Server for Ahalogy Front End Interview",
   "dependencies": {
     "express": "^4.16.3"
   },
   "devDependencies": {},
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC"
