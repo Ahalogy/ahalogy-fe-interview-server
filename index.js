@@ -1,6 +1,53 @@
 const express = require('express')
 const app = express()
-const data = `{"data":{"type":"influencers","id":"8926","attributes":{"email":"erica@thecrumbykitchen.com","starred":false,"completed-general":true,"completed-blog-details":true,"completed-capabilities":true,"completed-personal-details":true,"completed-social-media-accounts":true,"address":"2531 Sabal Palm Dr.","city":"Edgewater","state":"Florida","zip":"32141","country":"USA","phone":"3868471013","agent":false,"agent-email":"","agent-name":"","old-content-agreement":false,"blog-name":"The Crumby Kitchen","blog-url":"https://thecrumbykitchen.com/","cms":"Wordpress","health-food-blogger":false,"sponsored-content-fee":750.0,"video":true,"ahalogy-pixel":true,"third-party-pixel":true,"high-res-imagery":true,"time-for-video-post":"2 days","birthday":"03/01/1984","gender":"Female","married":true,"pets-other":"","life-milestones":"RENOVATING_HOME","firstname":"Erica","lastname":"Acevedo","content_agreement_2017":true,"other_cms_":"","other_diet_content":"","retailers_frequented_other_":"Trader Joe's, Whole Foods, Aldi","just_social_share_rate":250.0,"sponsored_content_fee_video_":1100.0,"travel":true,"photography":true,"standard_amount_of_time_for_one_post":"1 day","quick_turnaround_content":true,"fastest_you_can_complete_post":"1 day","reasons_to_decline_a_brand":"Competitor conflict; timing issues","do_you_have_kids":false,"other_life_milestones":"","retailers_frequented_muse_":"TARGET,SAMS_CLUB,WALMART,PUBLIX,CVS,WALGREENS,OTHER","content_topics_muse_":"FOOD_DRINK,TRAVEL,HEALTH_FITNESS,ENTERTAINING","diet_catered_content_muse_":"","do_you_have_pets":"DOGS"},"relationships":{"user":{"data":{"type":"users","id":"1005"}},"social-media-accounts":{"data":[{"type":"social-media-accounts","id":"811"},{"type":"social-media-accounts","id":"812"},{"type":"social-media-accounts","id":"813"},{"type":"social-media-accounts","id":"814"},{"type":"social-media-accounts","id":"815"}]},"children":{"data":[]}}},"included":[{"type":"social-media-pages","id":"745","attributes":{"name":"The Crumby Cupcakery","identifier":"1593456104296169","link":"https://www.facebook.com/1593456104296169"},"relationships":{"social-media-account":{"data":{"type":"social-media-accounts","id":"813"}}}},{"type":"social-media-pages","id":"748","attributes":{"name":"Food Wine Conference by Sunday Supper Movement","identifier":"619680524716000","link":"https://www.facebook.com/619680524716000"},"relationships":{"social-media-account":{"data":{"type":"social-media-accounts","id":"813"}}}},{"type":"social-media-accounts","id":"812","attributes":{"social-media-service-id":4,"valid":true,"create-date":[2017,10,16,16,40,48],"modify-date":[2018,3,7,16,0,13],"last-successful-fetch":1520431226000},"relationships":{"influencer":{"data":{"type":"influencers","id":"8926"}},"social-media-pages":{"data":[{"type":"social-media-pages","id":"6369"}]}}},{"type":"social-media-pages","id":"746","attributes":{"name":"The Crumby Kitchen","identifier":"921853947829705","link":"https://www.facebook.com/921853947829705"},"relationships":{"social-media-account":{"data":{"type":"social-media-accounts","id":"813"}}}},{"type":"social-media-pages","id":"6369","attributes":{"name":"crumbykitchen","identifier":"263460784359605164","link":"https://www.pinterest.com/crumbykitchen"},"relationships":{"social-media-account":{"data":{"type":"social-media-accounts","id":"812"}}}},{"type":"social-media-accounts","id":"814","attributes":{"social-media-service-id":3,"valid":true,"create-date":[2017,10,16,16,41,4],"modify-date":[2018,3,7,6,1,13],"last-successful-fetch":1520402432000,"last-fetched-identifier":"969996207551647745"},"relationships":{"influencer":{"data":{"type":"influencers","id":"8926"}},"social-media-pages":{"data":[{"type":"social-media-pages","id":"5291"}]}}},{"type":"social-media-pages","id":"749","attributes":{"name":"April Golightly","identifier":"127656873959917","link":"https://www.facebook.com/127656873959917"},"relationships":{"social-media-account":{"data":{"type":"social-media-accounts","id":"813"}}}},{"type":"social-media-accounts","id":"813","attributes":{"social-media-service-id":1,"token-expiration":[2018,4,20,16,37,23],"valid":true,"create-date":[2017,10,16,16,40,55],"modify-date":[2018,3,7,5,3,26],"last-successful-fetch":1520398897000},"relationships":{"influencer":{"data":{"type":"influencers","id":"8926"}},"social-media-pages":{"data":[{"type":"social-media-pages","id":"744"},{"type":"social-media-pages","id":"745"},{"type":"social-media-pages","id":"746"},{"type":"social-media-pages","id":"747"},{"type":"social-media-pages","id":"748"},{"type":"social-media-pages","id":"749"}]}}},{"type":"influencers","id":"8926","attributes":{"email":"erica@thecrumbykitchen.com","starred":false,"completed-general":true,"completed-blog-details":true,"completed-capabilities":true,"completed-personal-details":true,"completed-social-media-accounts":true,"address":"2531 Sabal Palm Dr.","city":"Edgewater","state":"Florida","zip":"32141","country":"USA","phone":"3868471013","agent":false,"agent-email":"","agent-name":"","old-content-agreement":false,"blog-name":"The Crumby Kitchen","blog-url":"https://thecrumbykitchen.com/","cms":"Wordpress","health-food-blogger":false,"sponsored-content-fee":750.0,"video":true,"ahalogy-pixel":true,"third-party-pixel":true,"high-res-imagery":true,"time-for-video-post":"2 days","birthday":"03/01/1984","gender":"Female","married":true,"pets-other":"","life-milestones":"RENOVATING_HOME","firstname":"Erica","lastname":"Acevedo","content_agreement_2017":true,"other_cms_":"","other_diet_content":"","retailers_frequented_other_":"Trader Joe's, Whole Foods, Aldi","just_social_share_rate":250.0,"sponsored_content_fee_video_":1100.0,"travel":true,"photography":true,"standard_amount_of_time_for_one_post":"1 day","quick_turnaround_content":true,"fastest_you_can_complete_post":"1 day","reasons_to_decline_a_brand":"Competitor conflict; timing issues","do_you_have_kids":false,"other_life_milestones":"","retailers_frequented_muse_":"TARGET,SAMS_CLUB,WALMART,PUBLIX,CVS,WALGREENS,OTHER","content_topics_muse_":"FOOD_DRINK,TRAVEL,HEALTH_FITNESS,ENTERTAINING","diet_catered_content_muse_":"","do_you_have_pets":"DOGS"},"relationships":{"user":{"data":{"type":"users","id":"1005"}},"social-media-accounts":{"data":[{"type":"social-media-accounts","id":"811"},{"type":"social-media-accounts","id":"812"},{"type":"social-media-accounts","id":"813"},{"type":"social-media-accounts","id":"814"},{"type":"social-media-accounts","id":"815"}]},"children":{"data":[]}}},{"type":"users","id":"1005","attributes":{"auth0-id":"auth0|59e4e0c51b7fc7268eb8cb2a","email":"erica@thecrumbykitchen.com","first-name":"Erica","last-name":"Acevedo","unsubscribed":false,"influencer":true,"image":"https://res.cloudinary.com/ahalogydev/image/upload/v1508172003/user_uploads/us_gcv2wu.jpg"},"relationships":{"brand-users":{"data":[]}}},{"type":"social-media-pages","id":"747","attributes":{"name":"Erica Acevedo Photography","identifier":"1473993266150466","link":"https://www.facebook.com/1473993266150466"},"relationships":{"social-media-account":{"data":{"type":"social-media-accounts","id":"813"}}}},{"type":"social-media-pages","id":"5291","attributes":{"name":"crumbykitchen","identifier":"2568036332","link":"https://www.twitter.com/crumbykitchen"},"relationships":{"social-media-account":{"data":{"type":"social-media-accounts","id":"814"}}}},{"type":"social-media-accounts","id":"815","attributes":{"social-media-service-id":6,"token-expiration":[2018,3,1,4,50,37],"valid":true,"create-date":[2017,10,16,16,41,16],"modify-date":[2018,3,1,3,50,36]},"relationships":{"influencer":{"data":{"type":"influencers","id":"8926"}},"social-media-pages":{"data":[{"type":"social-media-pages","id":"9837"}]}}},{"type":"social-media-pages","id":"744","attributes":{"name":"The Keto Queens","identifier":"1368550516572590","link":"https://www.facebook.com/1368550516572590"},"relationships":{"social-media-account":{"data":{"type":"social-media-accounts","id":"813"}}}},{"type":"social-media-accounts","id":"811","attributes":{"social-media-service-id":5,"token-expiration":[2017,10,16,17,40,38],"valid":true,"create-date":[2017,10,16,16,40,38],"modify-date":[2018,3,1,2,43,8]},"relationships":{"influencer":{"data":{"type":"influencers","id":"8926"}},"social-media-pages":{"data":[]}}},{"type":"social-media-pages","id":"9837","attributes":{"name":"The Crumby Kitchen","identifier":"UCww1v2AEEDRlXNF_cLDBfpA","link":"https://www.youtube.com/The Crumby Kitchen"},"relationships":{"social-media-account":{"data":{"type":"social-media-accounts","id":"815"}}}}]}`;
+const data = `{
+  "data":{
+    "id":"8634",
+    "email":"livefreemiranda@gmail.com",
+    "city":"Richmond",
+    "state":"Virginia",
+    "zip":"23226",
+    "country":"USA",
+    "blog-name":"Live Free Creative Co.",
+    "blog-url":"http://livefreecreative.co/blog",
+    "birthday":"02/09/1983",
+    "gender":"Female",
+    "married":true,
+    "number-of-kids":3,
+    "first-name":"Miranda ",
+    "last-name":"Anderson",
+    "do-you-have-kids":true,
+    "retailers-frequented":"TARGET,COSTCO,WALMART,CVS",
+    "content-topics":"DESIGN,DIY_CRAFTS,FOOD_DRINK,HOME_DECOR,KIDS_PARENTING,LIFESTYLE,TRAVEL,WOMENS_FASHION,OTHER",
+    "social-media-accounts":[
+       {
+          "id":0,
+          "type":"pinterest",
+          "name":"livefreecreativeco",
+          "link":"https://www.pinterest.com/livefreecreativeco"
+       },
+       {
+          "id":1,
+          "type":"twitter",
+          "name":"livefreemiranda",
+          "link":"https://www.twitter.com/livefreemiranda"
+       },
+       {
+          "id":2,
+          "type":"instagram",
+          "name":"livefreemiranda",
+          "link":"https://www.instagram.com/livefreemiranda"
+       },
+       {
+          "id":3,
+          "type":"youtube",
+          "name":"livefreemiranda",
+          "link":"https://www.youtube.com/channel/UC-NTYfjnguU4dgIFrIKolYQ"
+       }
+    ]
+  }
+}`;
+
 const port = process.env.PORT || 3000;
 
 app.use(function(req, res, next) {
@@ -9,9 +56,9 @@ app.use(function(req, res, next) {
 next();
 });
 
-app.get('/influencers/8926', ((req, res) => { 
+app.get('/influencers/8634', ((req, res) => {
     const json = JSON.parse(data);
-    res.json(json) 
+    res.json(json)
 }));
 
 app.listen(port, () => console.log('Example app listening on port 3000!'))

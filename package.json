@@ -1,7 +1,7 @@
 {
   "name": "ahalogy_interview_server",
   "version": "1.0.0",
-  "description": "Server for Ahalogy Front End Interview",
+  "description": "Front End Interview Server",
   "dependencies": {
     "express": "^4.16.3"
   },
