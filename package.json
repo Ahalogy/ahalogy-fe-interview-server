@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Front End Interview Server",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.17.3"
   },
   "devDependencies": {},
   "main": "index.js",
